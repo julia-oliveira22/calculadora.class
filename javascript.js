@@ -5,7 +5,7 @@ let expressao = '';
 
 botoes.forEach(botao => {
   botao.addEventListener('click', () => {
-    document.getElementById('display').textContent = '123';
+    const valor = botao.textContent.trim();
 
     if (valor === 'C') {
      
