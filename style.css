@@ -1,4 +1,3 @@
-
 body {
   background-color: #fffafc;
   display: flex;
@@ -8,7 +7,6 @@ body {
   font-family: "Comic Sans MS", "Poppins", cursive, sans-serif;
 }
 
-/* Estrutura da calculadora */
 .calculadora {
   background-color: #ffdbe8;
   border-radius: 25px;
@@ -17,6 +15,7 @@ body {
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
+/* Display */
 .display {
   overflow-x: auto;
   display: flex;
@@ -26,20 +25,18 @@ body {
   font-size: 26px;
   height: 60px;
   margin-bottom: 20px;
-  box-shadow: inset 0 -3px 5px rgba(126, 87, 119, 0.15);
+  box-shadow: inset 0 -3px 5px rgba(0,0,0,0.15);
 }
 
 .display::-webkit-scrollbar {
   display: none;
 }
 
-
 .botoes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
-
 
 .botao {
   position: relative;
@@ -53,19 +50,16 @@ body {
   transition: all 0.2s ease;
 }
 
-
 .botao.branco {
   background-color: #fff7fa;
   color: #555;
 }
-
 
 .botao.rosa {
   background-color: #ffb6c1;
   color: white;
 }
 
-/* Carinhas fofas */
 .botao::after {
   content: "ʕ•ᴥ•ʔ";
   font-size: 12px;
@@ -75,7 +69,6 @@ body {
   opacity: 0.6;
 }
 
-
 .botao:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 6px rgba(0,0,0,0.25);
@@ -84,7 +77,4 @@ body {
 .botao:active {
   transform: translateY(2px);
   box-shadow: 0 2px 2px rgba(0,0,0,0.15);
-}
-.display {
-  overflow-x: auto;
 }
