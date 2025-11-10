@@ -8,13 +8,13 @@ botoes.forEach(botao => {
     const valor = botao.textContent.trim();
 
     if (valor === 'C') {
-      // Limpa o visor e a expressão
+     
       expressao = '';
       display.textContent = '0';
     } 
     else if (valor === '=') {
       try {
-        // Troca os símbolos pelos operadores corretos do JavaScript
+       
         const resultado = eval(
           expressao
             .replace(/×/g, '*')
@@ -30,7 +30,7 @@ botoes.forEach(botao => {
       }
     } 
     else {
-      // Adiciona o número ou operador à expressão
+      
       expressao += valor;
       display.textContent = expressao;
     }

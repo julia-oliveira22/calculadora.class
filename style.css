@@ -1,4 +1,4 @@
-/* Estilo base */
+
 body {
   background-color: #fffafc;
   display: flex;
@@ -17,7 +17,7 @@ body {
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-/* Tela da calculadora */
+
 .display {
   background-color: #f7b6c8;
   border-radius: 12px;
@@ -32,14 +32,14 @@ body {
   box-shadow: inset 0 -3px 5px rgba(0,0,0,0.15);
 }
 
-/* Grade de botões */
+
 .botoes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
 
-/* Estilo dos botões */
+
 .botao {
   position: relative;
   border: none;
@@ -52,13 +52,13 @@ body {
   transition: all 0.2s ease;
 }
 
-/* Botões brancos */
+
 .botao.branco {
   background-color: #fff7fa;
   color: #555;
 }
 
-/* Botões rosas (operadores e = ) */
+
 .botao.rosa {
   background-color: #ffb6c1;
   color: white;
@@ -74,7 +74,7 @@ body {
   opacity: 0.6;
 }
 
-/* Efeitos de clique e hover */
+
 .botao:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 6px rgba(0,0,0,0.25);
