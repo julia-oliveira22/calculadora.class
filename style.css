@@ -1,0 +1,86 @@
+/* Estilo base */
+body {
+  background-color: #fffafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Comic Sans MS", "Poppins", cursive, sans-serif;
+}
+
+/* Estrutura da calculadora */
+.calculadora {
+  background-color: #ffdbe8;
+  border-radius: 25px;
+  padding: 20px;
+  width: 270px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Tela da calculadora */
+.display {
+  background-color: #f7b6c8;
+  border-radius: 12px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 15px;
+  font-size: 26px;
+  color: #fff;
+  margin-bottom: 20px;
+  box-shadow: inset 0 -3px 5px rgba(0,0,0,0.15);
+}
+
+/* Grade de botões */
+.botoes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Estilo dos botões */
+.botao {
+  position: relative;
+  border: none;
+  border-radius: 18px;
+  height: 60px;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 0 rgba(0,0,0,0.15);
+  transition: all 0.2s ease;
+}
+
+/* Botões brancos */
+.botao.branco {
+  background-color: #fff7fa;
+  color: #555;
+}
+
+/* Botões rosas (operadores e = ) */
+.botao.rosa {
+  background-color: #ffb6c1;
+  color: white;
+}
+
+/* Carinhas fofas */
+.botao::after {
+  content: "ʕ•ᴥ•ʔ";
+  font-size: 12px;
+  position: absolute;
+  bottom: 5px;
+  right: 8px;
+  opacity: 0.6;
+}
+
+/* Efeitos de clique e hover */
+.botao:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 6px rgba(0,0,0,0.25);
+}
+
+.botao:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 2px rgba(0,0,0,0.15);
+}
