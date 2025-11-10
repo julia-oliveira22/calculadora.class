@@ -8,7 +8,6 @@ botoes.forEach(botao => {
     const valor = botao.textContent.trim();
 
     if (valor === 'C') {
-     
       expressao = '';
       display.textContent = '0';
     } 
@@ -30,7 +29,10 @@ botoes.forEach(botao => {
       }
     } 
     else {
-      
+    
+      const ultimoNumero = expressao.split(/[\+\-×÷−]/).pop();
+      if (valor === '.' && ultimoNumero.includes('.')) return;
+
       expressao += valor;
       display.textContent = expressao;
     }
