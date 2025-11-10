@@ -18,7 +18,7 @@ body {
 }
 
 
-..display::-webkit-scrollbar {
+.display::-webkit-scrollbar {
   display: none;
   background-color: #f7b6c8;
   color: #333;
