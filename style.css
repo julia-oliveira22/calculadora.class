@@ -20,7 +20,7 @@ body {
 
 .display::-webkit-scrollbar {
   display: none;
-  background-color: #f7b6c8;
+  background-color:#ff9eb8;
   color: #333;
   border-radius: 12px;
   height: 60px;
